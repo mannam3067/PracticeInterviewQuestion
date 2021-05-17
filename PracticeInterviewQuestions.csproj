@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PracticeInterviewQuestions.ExtensionMethods</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,11 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractClassCodeDuplication.cs" />
+    <Compile Include="CanHaveAbstractConstructor.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\PracticeInterviewQuestions.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\PracticeInterviewQuestions.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\PracticeInterviewQuestions.csprojAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="bin\Debug\PracticeInterviewQuestions.exe" />
+    <Content Include="bin\Debug\PracticeInterviewQuestions.pdb" />
+    <Content Include="obj\Debug\PracticeInterviewQuestions.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PracticeInterviewQuestions.exe" />
+    <Content Include="obj\Debug\PracticeInterviewQuestions.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
