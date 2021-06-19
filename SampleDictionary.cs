@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace PracticeInterviewQuestions
 {
-     class SampleDictionary
+    class SampleDictionary
     {
-         Dictionary<int, EmploeeDetails> dicti = new Dictionary<int, EmploeeDetails>();
+        Dictionary<int, EmploeeDetails> dicti = new Dictionary<int, EmploeeDetails>();
         private static EmploeeDetails empdetails = new EmploeeDetails();
 
-
+        //creating Employee details object
         private List<EmploeeDetails> employeeDetails = new List<EmploeeDetails>
         {
             new EmploeeDetails { ID = 101, Name = "mallikharjuna", Salary = 100000 },
@@ -27,13 +27,13 @@ namespace PracticeInterviewQuestions
                 sampleDictionary.dicti.Add(item.ID, item);
             }
 
-            if(sampleDictionary.dicti.TryGetValue(101, out empdetails))
+            if (sampleDictionary.dicti.TryGetValue(101, out empdetails))
             {
-                Console.WriteLine(empdetails.ID+""+empdetails.Name);
+                Console.WriteLine(empdetails.ID + "" + empdetails.Name);
             }
             else
             {
-                Console.WriteLine("there is record to find from the list");
+                Console.WriteLine("there is no record to found from the list");
             }
 
             Console.ReadKey();
