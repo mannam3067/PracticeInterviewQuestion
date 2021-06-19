@@ -19,6 +19,7 @@ namespace PracticeInterviewQuestions
         }
         static void Main(string[] args)
         {
+            //we cann't sort values on list directly because of list having multiple prop so we must provide the specific field
             //Step1
             Console.WriteLine("Sorting the items using IComparable<T> interface on model class and CompareTo");
             //customerDetails.Sort();
